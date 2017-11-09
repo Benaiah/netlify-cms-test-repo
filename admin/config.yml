@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: media
+public_folder: content
+publish_mode: simple
+
+collections:
+  - create: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - collection: authors
+        label: Author
+        name: author
+        searchFields:
+          - title
+        valueField: title
+        widget: relation
+      - label: Body
+        name: body
+        widget: markdown
+    folder: content/posts
+    label: Posts
+    name: posts
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  - create: true
+    fields:
+      - label: Name
+        name: title
+        widget: string
+      - label: Description
+        name: body
+        widget: markdown
+    folder: content/authors
+    label: Authors
+    name: authors
+    slug: '{{slug}}'
