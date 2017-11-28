@@ -26,6 +26,7 @@ collections:
     label: Posts
     name: posts
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    extension: 'markdown'
   - create: true
     fields:
       - label: Name
