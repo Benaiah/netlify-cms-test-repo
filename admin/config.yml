@@ -4,7 +4,7 @@ backend:
 
 media_folder: media
 public_folder: content
-publish_mode: simple
+publish_mode: editorial_workflow
 
 collections:
   - create: true
@@ -26,7 +26,6 @@ collections:
     label: Posts
     name: posts
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    extension: 'markdown'
   - create: true
     fields:
       - label: Name
