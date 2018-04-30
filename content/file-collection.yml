@@ -1,0 +1,4 @@
+site_title: "Netlify CMS Test Repo"
+posts:
+  front_limit: 10
+  author: "Benaiah"
