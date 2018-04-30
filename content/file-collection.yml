@@ -1,4 +1,4 @@
-site_title: "Netlify CMS Test Repo"
+site_title: Netlify CMS Test Repo
 posts:
+  author: Benaiah Mischenko
   front_limit: 10
-  author: "Benaiah"
